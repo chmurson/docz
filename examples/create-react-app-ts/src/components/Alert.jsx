@@ -1,5 +1,6 @@
 import React from 'react'
 import t from 'prop-types'
+import { ReactComponent as ReactLogo } from '../logo.svg'
 
 const kinds = {
   info: '#5352ED',
@@ -19,6 +20,7 @@ export const Alert = ({ children, kind, ...rest }) => (
     }}
     {...rest}
   >
+    <ReactLogo style={{ width: 30, height: 30 }} />
     {children}
   </div>
 )

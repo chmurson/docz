@@ -1,12 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { ReactComponent as ReactLogo } from './logo.svg'
+import { Alert } from './components/Alert'
+import './App.css'
 
 const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <ReactLogo className="App-logo" />
+        <Alert kind="negative">This is some message</Alert>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
@@ -20,7 +22,7 @@ const App = () => {
         </a>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
